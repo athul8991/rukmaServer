@@ -10,10 +10,14 @@
 let flag =false;
 window.addEventListener('DOMContentLoaded', event => {
 
+
     const root = document.querySelector('#root');
+    // console.log(window.location.hostname);
+    const hostname = window.location.hostname;
+    console.log(hostname);
 
     if(flag != true){
-        fetch('http://127.0.0.1:3000/home').then(res=>res.text().then((data)=>{
+        fetch(`https://${hostname}/home`).then(res=>res.text().then((data)=>{
             root.innerHTML = data;
             const datatablesSimple = document.getElementById('datatablesSimple');
             if (datatablesSimple) {
