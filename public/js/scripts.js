@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', event => {
     console.log(hostname);
 
     if(flag != true){
-        fetch(`http://${hostname}/home`).then(res=>res.text().then((data)=>{
+        fetch(`https://${hostname}/home`).then(res=>res.text().then((data)=>{
             root.innerHTML = data;
             const datatablesSimple = document.getElementById('datatablesSimple');
             if (datatablesSimple) {
@@ -79,7 +79,7 @@ function tabchange(e){
  async function showContent(url){
     const hostname = window.location.hostname;
     // console.log(hostname);
-    await fetch(`http://${hostname}/${url}`).then(async(res)=>{
+    await fetch(`https://${hostname}/${url}`).then(async(res)=>{
         
     const data = await res.text();
     if(data =='login'){
@@ -103,7 +103,7 @@ async function postSubmit(e){
 try{
     if(inpuTitle && inputBody){
         const hostname = window.location.hostname;
-        const response =await fetch(`http://${hostname}/${tab}`,{
+        const response =await fetch(`https://${hostname}/${tab}`,{
             method:'POST',
             body:JSON.stringify({title:inpuTitle,body:inputBody}),
             headers: {
