@@ -35,9 +35,10 @@ let homeRouter = require('./routes/home');
 let regRoutes =require('./routes/register')
 const loginRoutes =require('./routes/login');
 const logoutRoutes = require('./routes/logout');
-
-// view engine setup
-
+const aboutRoutes = require('./routes/about');
+const storyRoutes = require('./routes/story');
+const privacyRoutes =require('./routes/privacy')
+const homePageRoutes = require('./routes/homepage')
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -48,14 +49,17 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-
-
 app.use('/users', usersRouter);
 app.use('/home',homeRouter);
 app.use('/login',loginRoutes);
 app.use('/admin', indexRouter);
 app.use('/register',regRoutes);
-app.use('/logout',logoutRoutes)
+app.use('/logout',logoutRoutes);
+app.use('/about',aboutRoutes);
+app.use('/story',storyRoutes);
+app.use('/privacy',privacyRoutes);
+app.use('/',homePageRoutes);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

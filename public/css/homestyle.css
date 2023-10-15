@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*
+.bg-light{
+    /* background: none; 
+
+}*/
+/* .navbar-brand {
+    /* color: white; 
+    margin-left: 20px;
+    font-family:'Sail','cursive';
+    font-size: 2rem;
+    margin-top: -20px;
+    /* position: absolute; 
+} */
+/* .outer-box{
+    position: relative;
+} */
+.nav-link{
+    color:rgb(38, 32, 32);
+    font-weight: 900;
+    transition: color 1s;
+}
+.nav-link:hover{
+    color:rgb(69, 69, 210);
+}
+.parallax_bg{
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: yellow;
+    font-size: x-large;
+    text-align: center;
+    position: relative;
+
+}
+.inside-f-parallax{
+    width: 100%;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+
+}
+.inside-f-parallax h1{
+    font-family:'Sail','cursive';
+    font-size: 4rem;
+    z-index: 0;
+    color:white;
+}
+.our-story{
+    padding: 10px;
+    
+}
+
+
+.content{
+    width: 100%;
+    /* height: 300px; */
+    /* background: gray; */
+    color: rgb(9, 80, 3);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.content div{
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
+    font-size:3rem;
+}
+.content p{
+    font-weight: 100;
+    font-size: 25px;
+    color: rgb(6, 69, 6);
+    width: 90%;
+    margin: auto;
+}
+.content img{
+    width:100%;
+    margin: auto;
+}
+.parallax_b{
+    /* width: 100%; */
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed ;
+}
+.img-pricing-1{
+    text-align: left;
+}
+
+.pricing{
+    background: #E3E4E8;
+    
+
+}
+#pricing{
+    background-color:#E3E4E8;
+    margin-top: 20px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.img-size{
+    width: 100%;
+    
+    
+}
+.pricing-img{
+    text-align: left;
+}
+
+
+  .mb-2, .my-2 {
+      margin-bottom: .5rem!important;
+  }
+
+  #about{
+    /* height: fit-content; */
+    background: rgb(255, 255, 255);
+    text-align: center;
+    padding: 30px;
+    
+    height: 100vh;
+    position: relative;
+    text-align: center;
+  }
+  .about-container p{
+    font-size: 20px;
+  }
+.about-container{
+    text-align: center;
+    
+
+
+}
+  .top-btn{
+    width: 60px;
+    height: 60px;
+
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    background-color: rgb(216, 216, 213); 
+    color: white;
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 50%; 
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+  }
+
+  #sign-in{
+    height: 100vh;
+    background-image: url('https://athul8991.github.io/Rukma/img/background.jpg');
+    position: relative;
+
+  }
+
+  .loginContainer{
+    width: 95%;
+    /* background: rgb(247, 247, 247); */
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    padding: 10px;
+    /* color: rgb(206, 7, 7); */
+    background-color: #f3f4fa;
+    opacity: .8;
+    color: black;
+  }
+  .form-group input{
+    background: none;
+    color: black;
+    /* border: none; */
+  }
+  .form-group input::placeholder{
+    color: black;
+  }
+  .form-control:focus{
+    color:black;
+    outline: 1px solid black;
+    border: 0px;
+    box-shadow: none;
+
+  }
+  .form-control{
+    outline: 1px solid black;
+  }
+.btn-outline-dark{
+    color: black;
+    font-weight: bold;
+}
+.Register{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    margin: auto;
+}
+.forgot{
+    color:green;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+.forgot:hover{
+    text-decoration: none;
+    color: black;
+}
+
+  /* @Media Query */
+
+@media screen and (max-width:996px) {
+    .content p {
+        width: 100%;
+    }
+    .navbar{
+       text-align: center;
+    }
+    /* .navbar-toggler{
+        /* color: black; */
+        /* background: rgb(250, 246, 246); 
+    } */
+    /* span .navbar-toggler-icon{
+        color: darkgreen;
+        background: green;
+    } */
+    /* .navbarNav{
+        z-index: 2;
+        background:red ;
+    } */
+    
+    /* .nav-link{
+        color: gray;
+    } */
+    .pricing-box{
+        max-width: 300px;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .about-container{
+        /* max-width: 300px; */
+        min-width: 300px;
+       position: relative;
+
+
+    }
+}
+@media screen and (min-width:995px) {
+    .about-container{
+        width: 50%;
+     top: 50%;
+    left: 50%; 
+     transform: translate(-50%,-50%);
+    position: absolute; 
+    }
+    
+}
